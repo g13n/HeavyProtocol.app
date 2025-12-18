@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Heavy Protocol</title>
+    <style>
+        /* Apple-style Dark Mode CSS */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1c1c1e;
+            /* iOS System Gray 6 (Dark) */
+            color: #f2f2f7;
+            /* iOS System Gray 6 (Light) */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            /* Center everything for a landing page look */
+        }
+
+        /* The Main Container */
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+            /* Keep text readable */
+        }
+
+        /* Headlines */
+        h1,
+        h2,
+        h3 {
+            color: #ffffff;
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+
+        /* Links (Apple Blue) */
+        a {
+            color: #0A84FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons (optional styling for links) */
+        a[href*="apps.apple.com"] {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Footer / Separator */
+        hr {
+            border: 0;
+            border-top: 1px solid #38383a;
+            margin: 40px 0;
+        }
+
+        /* List Styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        {{ content }}
+
+        <br><br>
+        <center>
+            <small style="color: #8e8e93;">&copy; 2025 Heavy Protocol.</small>
+        </center>
+    </main>
+</body>
+
+</html>
