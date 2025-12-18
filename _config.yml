@@ -1,5 +1,7 @@
-theme: jekyll-theme-merlot
+remote_theme: pages-themes/midnight@v0.2.0
 title: Heavy Protocol
 description: The ultimate High Intensity Training tracker.
 show_downloads: false
 google_analytics:
+plugins:
+- jekyll-remote-theme
