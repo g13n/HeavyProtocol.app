@@ -6,29 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | Heavy Protocol</title>
     <style>
-        /* Apple-style Dark Mode CSS */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #1c1c1e;
-            /* iOS System Gray 6 (Dark) */
             color: #f2f2f7;
-            /* iOS System Gray 6 (Light) */
             line-height: 1.6;
             margin: 0;
-            padding: 40px 20px;
-            text-align: center;
-            /* Center everything for a landing page look */
+            padding: 0;
         }
 
-        /* The Main Container */
+        header {
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #2c2c2e, #1c1c1e);
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            /* iOS standard radius */
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .app-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #0A84FF;
+        }
+
+        .download-badge {
+            display: inline-block;
+            margin-top: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .download-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .download-badge img {
+            height: 44px;
+            /* Standard Apple Badge Height */
+        }
+
         main {
             max-width: 700px;
             margin: 0 auto;
+            padding: 40px 20px;
             text-align: left;
-            /* Keep text readable */
         }
 
-        /* Headlines */
         h1,
         h2,
         h3 {
@@ -36,15 +82,6 @@
             margin-top: 1.5em;
         }
 
-        h1 {
-            font-size: 2.5em;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            text-align: center;
-            margin-bottom: 0.5em;
-        }
-
-        /* Links (Apple Blue) */
         a {
             color: #0A84FF;
             text-decoration: none;
@@ -54,41 +91,46 @@
             text-decoration: underline;
         }
 
-        /* Buttons (optional styling for links) */
-        a[href*="apps.apple.com"] {
-            display: inline-block;
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        /* Footer / Separator */
         hr {
             border: 0;
             border-top: 1px solid #38383a;
             margin: 40px 0;
         }
 
-        /* List Styling */
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            color: #8e8e93;
+            font-size: 0.9em;
+            border-top: 1px solid #38383a;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <img src="/assets/icon.png" alt="Heavy Protocol Icon" class="app-icon">
+        <h1 class="app-title">Heavy Protocol</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+        </nav>
+
+        <a href="https://apps.apple.com/us/app/heavy-protocol/id6756292434" class="download-badge">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1313366400&h=666e949988118d3b80eb17f41595ef39"
+                alt="Download on the App Store">
+        </a>
+    </header>
+
     <main>
         {{ content }}
-
-        <br><br>
-        <center>
-            <small style="color: #8e8e93;">&copy; 2025 Gopalarathnam Venkatesan.</small>
-        </center>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Gopalarathnam Venkatesan.</p>
+    </footer>
 </body>
 
 </html>
