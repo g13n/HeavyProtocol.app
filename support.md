@@ -1,3 +1,9 @@
+---
+layout: page
+title: Support
+permalink: /support/
+---
+
 # Heavy Protocol Support
 
 ## Need Help?

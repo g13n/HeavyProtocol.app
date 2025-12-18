@@ -1,3 +1,9 @@
+---
+layout: page
+title: Privacy Policy
+permalink: /privacy/
+---
+
 # Privacy Policy for Heavy Protocol
 
 **Last Updated:** December 17, 2025
